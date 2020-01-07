@@ -283,20 +283,8 @@ li:nth-child(1) {
 .produkciya_items img {
 	display: block;
 	max-width: 100%;
-	transition: 0.2s;
-}
-.produkciya_items img:hover {
-	transform: scale(1.44);
 }
 
-@media (max-width: 1000px){
-	.produkciya_items img {
-		transition: none;
-	}
-	.produkciya_items img:hover {
-		transform: none;
-	}
-}
 /*О НАС*/
 #o_nas {
 	background: #fff;
@@ -384,20 +372,10 @@ li:nth-child(1) {
 .galereya_items img {
 	display: block;
 	max-width: 100%;
-	transition: 0.2s;
-}
-.galereya_items img:hover {
-	transform: scale(1.6);
 }
 @media (max-width: 880px){
 	.galereya_items {
 		width: auto;
-	}
-	.galereya_items img {
-		transition: none;
-	}
-	.galereya_items img:hover {
-		transform: none;
 	}
 }
 /*ПОДВАЛ*/
