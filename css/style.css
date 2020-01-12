@@ -1036,13 +1036,30 @@ a {
 	width: 350px;
 }
 
+@media screen and (max-width: 1180px) {
+	.eat_market {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+}
 @media screen and (max-width: 900px) {
 	.eat {
 		font-size: 32px;
 	}
 }
 @media screen and (max-width: 500px) {
+	.eat {
+		padding-bottom: 60px;
+	}
 	.eat_item {
+		margin-bottom: 80px;
+	}
+	.eat_item:last-child {
 		margin-bottom: 30px;
 	}
 	.eat_img1 {
