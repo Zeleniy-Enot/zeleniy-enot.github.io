@@ -436,6 +436,10 @@ a {
 	}
 }
 @media screen and (max-width: 1000px) {
+	.social_sub-bg {
+		-webkit-filter: none;
+		filter: none;
+	}
 	.social_dino{
 		z-index: 1;
 	}
