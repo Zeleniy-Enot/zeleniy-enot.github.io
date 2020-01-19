@@ -124,6 +124,7 @@ a {
 .special {
 	margin-top: 50px;
 	background-image: url(../img/Main/bg_islandia.jpg);
+	background-position: center;
 	height: 100vh;
 	background-size: cover;
 	display: -webkit-flex;
