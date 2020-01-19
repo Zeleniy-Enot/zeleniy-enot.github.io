@@ -49,41 +49,9 @@ a {
 	align-items: center;
 	justify-content: center;
 }
-<<<<<<< HEAD
 .white_bg {
 	background-color: #ffffff;
 	padding-bottom: 100px;
-=======
-@media screen and (max-width: 380px) {
-	.main_text h1 {
-		font-size: 48px;
-	}
-	.main_text h2 {
-		font-size: 32px;
-	}
-}
-
-/* ABOUT */
-.about {
-	color: #000000;
-	font-family: Gilroy-Regular;
-	font-size: 48px;
-	font-weight: 400;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 60px;
-}
-@media screen and (max-width: 520px) {
-	.about {
-		font-size: 32px;
-		padding: 30px;
-	}
-}
-.about_bg {
-	background-image: url(../img/bg/block.jpg);
-	background-position: center;
-	justify-content: center;
->>>>>>> 6eab2b5d87d8df418d539e64e22ffb4b9349f3d9
 }
 #main_iceland--text {
 	display: -webkit-flex;
@@ -510,41 +478,12 @@ a {
 	line-height: 110px;
 	text-transform: uppercase;
 }
-<<<<<<< HEAD
 .main_text h2 {
 	margin-top: 20px;
 	max-width: 607px;
 	color: #ffffff;
 	font-family: Roboto-L;
 	font-size: 36px;
-=======
-@media screen and (max-width: 900px) {
-	.dome {
-		margin: 20px;
-		margin-bottom: 80px;
-		padding: 20px;
-	}
-	.dome_text-main {
-		padding-bottom: 40px;
-	}
-	.dome_text-sub p:nth-child(3) {
-		padding-bottom: 30px;
-	}
-	.dome_text-main h3 {
-		font-size: 20px;
-		padding-bottom: 15px;
-	}
-	.dome_text-main p {
-		padding-bottom: 15px;
-	}
-}
-
-.eat {
-	color: #000000;
-	font-family: Gilroy-Regular;
-	font-size: 48px;
-	font-weight: 400;
->>>>>>> 6eab2b5d87d8df418d539e64e22ffb4b9349f3d9
 	text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
