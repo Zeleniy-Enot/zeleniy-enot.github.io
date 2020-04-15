@@ -1333,3 +1333,61 @@ a {
 		margin-bottom: 20px;
 	}
 }
+
+/* THANKS */
+.center{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	text-align: center;
+}
+.thanks{
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.thanks_ico img{
+	width: 200px;
+	margin-bottom: 10px;
+}
+.thanks_text{
+	font-family: 'M-Medium', sans-serif;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.thanks_text p{
+	padding-bottom: 10px;
+}
+.thanks_social a:first-child{
+	margin-right: 30px;
+}
+.thanks_social a img{
+	width: 50px;
+}
+.thanks_back{
+	margin-top: 30px;
+}
+.thanks_back a{
+	font-family: 'M-Medium', sans-serif;
+	border: 3px solid #c12020;
+	border-radius: 50px;
+	padding: 10px 20px;
+	line-height: 42px;
+	background: white;
+	color: #c12020;
+	font-size: 20px;
+	transition: .5s;
+}
+.thanks_back a:hover {
+	background: #c12020;
+	color: white;
+}
