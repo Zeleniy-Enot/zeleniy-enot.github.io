@@ -282,7 +282,7 @@ a {
 	background-image: url(../img/owl/slide5.png);
 	background-size: cover;
 }
-/*620 критическая точка*/
+
 @media screen and (max-width: 1000px) {
 	.slide{
 		height: 450px;
@@ -595,7 +595,7 @@ a {
 	bottom: 0px;
 	left: -60px;
 }
-/*990 критическая точка*/
+
 @media screen and (max-width: 990px){ 
 	.services_bg{
 		max-width: 560px;
@@ -771,7 +771,6 @@ a {
 	margin-left: 20px;
 	margin-right: 20px;
 }
-/*600 критическая точка*/
 .text_services{
 	margin-bottom: 40px;
 	text-align: center;
@@ -969,7 +968,7 @@ a {
 	right: -70px;
 	max-height: 740px;
 }
-/*1100 критическая точка*/
+
 @media screen and (max-width: 1100px){
 	.pluses_main{
 		-webkit-flex-direction: column;
@@ -1072,7 +1071,7 @@ a {
 	z-index: -1;
 	opacity: .25;
 }
-/*1055 критическая точка*/
+
 @media screen and (max-width: 1055px) {
 	.bank_text{
 		margin-left: 0px;
@@ -1272,7 +1271,7 @@ a {
 	font-size: 12px;
 	font-family:'M-Regular', sans-serif;
 }
-/*800 критическая точка*/
+
 @media screen and (max-width: 800px) {
 	.footer{
 		padding-top: 20px;
