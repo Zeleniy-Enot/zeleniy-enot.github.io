@@ -60,7 +60,8 @@
 		<div id="arrow" class="special_logo wow slideInUp">
 			<a href="#yak">	
 				<div class="transform">
-					<img src="img/citroen_redline.png" alt="">
+					<div class="circle"></div>
+					<img src="img/icon.png" alt="">	
 				</div>
 			</a>
 		</div>
@@ -81,7 +82,7 @@
 					<p class="color_red">Андре Гюстав Ситроен</p>
 					<p>Французский промышленник, создатель концерна «Citroën» и автомобиля под тем же наименованием.</p>
 				</div>
-				<img class="red_line" src="img/redline.png" alt="">
+				<img class="red_line special_rl" src="img/redline.png" alt="">
 			</div>
 
 			<div class="main_info--item wow fadeInLeft">
@@ -903,15 +904,15 @@
 	$(function() {
 		$(".owl-carousel").owlCarousel({
 			loop:true,
-				autoplay: true,
-				autoplayTimeout: 4000,
-				responsiveClass:true,
-				responsive:{
-					0:{
-						items:1,
-					}
+			autoplay: true,
+			autoplayTimeout: 4000,
+			responsiveClass:true,
+			responsive:{
+				0:{
+					items:1,
 				}
-			});
+			}
+		});
 	});
 </script>
 
@@ -936,7 +937,7 @@
 			}
 		});
 		$('.topNubex').click(function() {
-			$('body,html').animate({scrollTop:660},2000);
+			$('body,html').animate({scrollTop:660},1500);
 		});
 	});
 </script>
@@ -955,7 +956,7 @@
 			$(this).addClass('activ');
 
 			$('#'+active).fadeOut(1500);
-			setTimeout(function() { $('#'+id).fadeIn(3000)}, 1500);
+			setTimeout(function() { $('#'+id).fadeIn(1000)}, 1500);
 
 			active = id;
 		})
