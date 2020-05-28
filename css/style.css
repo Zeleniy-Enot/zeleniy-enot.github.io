@@ -256,6 +256,7 @@ a {
 /* WORK */
 .work{
 	overflow-x: hidden;
+	margin-top: 1000px;
 }
 .work_top{
 	display: -webkit-flex;
