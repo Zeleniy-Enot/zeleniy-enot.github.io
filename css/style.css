@@ -799,6 +799,8 @@ a {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	/*-ms-align-items: center;*/
+	/*align-items: flex-end;*/
 	justify-content: space-around;	
 }
 .about_into--name p{
@@ -809,6 +811,7 @@ a {
 	color: #fff;
 }
 .about_text{
+	margin-top: 69px;
 	max-width: 600px;
 	z-index: 1;
 	position: relative;
@@ -820,9 +823,15 @@ a {
 	font-family: 'M-Light', sans-serif;
 	letter-spacing: 1.2px;
 	line-height: 25px;
-	font-size: 16px;
+	font-size: 18px;
 	color: #fff;
 	margin-bottom: 20px;
+}
+.about_text p:nth-child(2){
+	margin-top: 20px;
+}
+.about_text p:nth-child(3){
+	margin-bottom: 0px;
 }
 .about_text img{
 	position: absolute;
@@ -879,6 +888,7 @@ a {
 		text-align: center;
 	}
 	.about_text{
+		margin-top: 0px;
 		padding-bottom: 0px; 
 	}
 	.about_text p{
