@@ -417,6 +417,7 @@ a {
 	font-size: 18px;
 	color: #1b1b1b;
 	transform: rotate(90deg);
+	text-shadow: 3px -3px #fff;
 }
 
 .DogHug{
@@ -838,9 +839,9 @@ a {
 	margin-bottom: 20px;
 }
 .about_text p:nth-child(2){
-	margin-top: 20px;
+	margin-top: 30px;
 }
-.about_text p:nth-child(3){
+.about_text p:nth-child(4){
 	margin-bottom: 0px;
 }
 .about_text img{
@@ -903,7 +904,7 @@ a {
 	.about_text p{
 		padding-left: 20px;
 		padding-right: 20px;
-		margin-bottom: 0px;
+		margin-bottom: 10px;
 		text-align: left;
 		font-size: 14px;
 	}
@@ -922,7 +923,8 @@ a {
 }
 @media screen and (max-width: 425px) {
 	.about_text iframe{
-		width: 280px;
+		width: 300px;
+		height: 300px;
 	}
 }
 
