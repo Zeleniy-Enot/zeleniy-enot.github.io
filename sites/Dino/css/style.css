@@ -256,7 +256,7 @@ a {
 /* ABOUT */
 .about {
 	color: #000000;
-	font-family: Gilroy;
+	font-family: Gilroy-Medium;
 	font-size: 48px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -1149,7 +1149,7 @@ a {
 
 .eat {
 	color: #000000;
-	font-family: Gilroy;
+	font-family: Gilroy-Medium;
 	font-size: 48px;
 	font-weight: 400;
 	text-transform: uppercase;
