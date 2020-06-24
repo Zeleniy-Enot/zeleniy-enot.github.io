@@ -3,54 +3,186 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	
+	<title>Казак везет</title>
 
-	<title>RS.WebStation</title>
-	<link rel="icon" href="img/icon.png" type="ico">
+	<!-- <meta name="description" content="Оказываем услуги для предоставления кредитов"> -->
+	<!-- <meta name="keywords" content="кредит, консалтинг, погашение, реструктуризация, рефинансирование, заемщик, финансы, бизнес, лизинг, ипотека, банк">  -->
 
-	<link rel="stylesheet" href="css/animated-border.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
 
-	<link rel="stylesheet" href="wow/css/animate.css">
+	<link rel="icon" href="img/logo-min.png" type="ico">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#arrow1").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1300);
+			});
+		});
+	</script>
+
 </head>
 
 <body>
+	<header class="shadow">
+		<div class="top">
+			<div class="logo">
+				<img src="img/logo-min.png" alt="">
+			</div>
+			<div class="contact">
+				<div class="contact_item">
+					<img src="img/icon/telephone-min.png" alt="">
+					<p class="">8 (918) 089-20-20</p>
+				</div>
+				<div class="contact_item">
+					<img src="img/icon/email-min.png" alt="">
+					<p>kazakvezet@gmail.com</p>
+				</div>
+			</div>
 
-	<div class="hamburger-menu">
-		<input id="menu__toggle" type="checkbox" />
-		<label class="menu__btn " for="menu__toggle">
-			<div class="circle"></div>
-			<span></span>
-		</label>
-
-		<ul class="menu__box">
-			<li><a class="ui-box forwardBorderTrain menu__item" href="work.html"><span class="ui-border-element">мои работы</span></a></li>
-			<li><a class="ui-box forwardBorderTrain menu__item" href="services.html"><span class="ui-border-element">услуги</span></a></li>
-			<li><a class="ui-box forwardBorderTrain menu__item" href="about.html"><span class="ui-border-element">обо мне</span></a></li>
-			<li><a class="ui-box forwardBorderTrain menu__item" href="contact.html"><span class="ui-border-element">контакты</span></a></li>
-		</ul>
-	</div>
-
-	<div class="code fullscreen-bg">
-		<div class="main">
-			<img class="wow fadeInDownBig" data-wow-delay = "2.3s" src="gif/main.gif"  alt="">
-			<p class="animation_text--1">проектирование & программирование</p>
-			<p class="wow jackInTheBox" data-wow-delay="2.9s">сайтов</p>
+			<div id="arrow1" class="buttom">
+				<a href="#yak1">
+					<p>Заказать звонок</p>
+				</a>
+			</div>
 		</div>
-		<video loop="" muted="" autoplay="" class="fullscreen-bg__video">
-			<source src="video/code.mp4" type="video/mp4">
-			<source src="video/code.Ogg" type="video/ogg">
-		</video>
-	</div>
+	</header>
+
+
+	<section>
+		<div class="owl">
+			<p>Доставка грузов</p>
+			<p>по всей <span class="orange_text">России</span></p>
+		</div>
+
+		<div class="care">
+			<p class="orange_text">У нас в наличии</p>
+			<div class="available">
+				<div class="available_item t25">
+					<img src="img/stock/refrigerated-min.png" alt="">
+					<p>Рефрижераторы</p>
+				</div>
+				<div class="available_item">
+					<img src="img/stock/light_tonnage-min.png" alt="">
+					<p class="mp250">Малотоннажный транспорт</p>
+				</div>
+				<div class="available_item t25">
+					<img src="img/stock/tow_trucks-min.png" alt="">
+					<p>Эвакуаторы</p>
+				</div>
+				<div class="available_item t25">
+					<img src="img/stock/manipulators-min.png" alt="">
+					<p>Манипуляторы</p>
+				</div>
+			</div>
+
+			<p>Услуги</p>
+			<div class="available w260">
+				<div class="available_item">
+					<img src="img/services/cargo_transportation-min.jpg" alt="">
+					<p>Транспортировка груза</p>
+				</div>
+				<div class="available_item">
+					<img src="img/services/movers-min.jpg" alt="">
+					<p>Грузчики</p>
+				</div>
+				<div class="available_item">
+					<img src="img/services/garbage-min.jpg" alt="">
+					<p class="mp250">Вывоз строительного мусора</p>
+				</div>
+				<div class="available_item">
+					<img src="img/services/movers-min.jpg" alt="">
+					<p>Переезды</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="request">
+			<p><span class="orange_text">Оставьте заявку</span> и мы перезвоним</p>
+		</div>
+		<div class="form" id="yak2">
+			<div class="form_text">
+				<div class="fort_text--img">
+					<img src="img/icon/shipping-min.jpg" alt="">
+					<p>Хотите получить консультацию?</p>	
+				</div>
+				<div class="fort_text--img">
+					<img src="img/icon/consultation-min.jpg" alt="">
+					<p>Узнать стоимость и длительность перевозки?</p>	
+				</div>
+				<div class="fort_text--img">
+					<img src="img/icon/loading-min.jpg" alt="">
+					<p>Нужны услуги погрузки и разгрузки?</p>	
+				</div>
+			</div>
+
+			<div id="yak1" class="form_send">
+
+				<form action="mail.php" method="POST" class="ui-form">
+					<p><span class="orange_text">Закажите</span> обратный звонок</p>
+					<div class="form-row">
+						<input type="text" name="user_name" placeholder="ФИО" required>
+					</div>
+
+					<div class="form-row">
+						<input type="text" name="user_phone" placeholder="Телефон" required >
+					</div>
+
+					<div class="btm">
+						<button type="submit" value="ЗАКАЗАТЬ">ЗАКАЗАТЬ</button>
+					</div>
+
+					<p>Отправляя заявку, вы принимаете <a class="orange_text" href="OPD.pdf" target="_blank">условия обработки персональных данных</a></p>
+				</form>
+
+			</div>
+		</div>
+
+		<div class="provide">
+			<p>Мы предоставляем</p>
+			<img src="img/provide/car-min.jpg" alt="">
+			<img src="img/provide/trailer-min.jpg" alt="">
+		</div>
+
+	</section>
+
+	<footer>
+		<div class="top">
+			<div class="contact">
+				<div class="contact_item">
+					<img src="img/icon/telephone-w-min.png" alt="">
+					<p class="">8 (918) 089-20-20</p>
+				</div>
+				<div class="contact_item">
+					<img src="img/icon/email-w-min.png" alt="">
+					<p>kazakvezet@gmail.com</p>
+				</div>
+			</div>
+
+			<div class="logo">
+				<img src="img/logo-min.png" alt="">
+			</div>
+
+			<div class="question">
+				<p>Остались вопросы?</p>
+				<div id="arrow1" class="buttom">
+					<a href="#yak1">
+						<p>Заказать звонок</p>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
 </body>
-
-<script src="wow/js/wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>
-
 </html>
