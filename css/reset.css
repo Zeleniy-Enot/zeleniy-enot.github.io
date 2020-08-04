@@ -28,6 +28,8 @@ body {
 }
 ol, ul, a {
 	list-style: none;
+	color: black;
+	text-decoration: none;
 }
 blockquote, q {
 	quotes: none;

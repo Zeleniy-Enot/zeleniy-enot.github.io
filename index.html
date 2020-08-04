@@ -4,185 +4,405 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	
-	<title>Казак везет</title>
+	<title>IMITEX</title>
 
-	<!-- <meta name="description" content="Оказываем услуги для предоставления кредитов"> -->
-	<!-- <meta name="keywords" content="кредит, консалтинг, погашение, реструктуризация, рефинансирование, заемщик, финансы, бизнес, лизинг, ипотека, банк">  -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="wow/css/animate.css" />
 
-	<link rel="icon" href="img/logo-min.png" type="ico">
+	<link rel="icon" href="img/icon.png" type="ico">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#arrow1").on("click","a", function (event) {
-				event.preventDefault();
-				var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-				$('body,html').animate({scrollTop: top}, 1300);
-			});
-		});
-	</script>
-
 </head>
 
-<body>
-	<header class="shadow">
-		<div class="top">
-			<div class="logo">
-				<img src="img/logo-min.png" alt="">
-			</div>
-			<div class="contact">
-				<div class="contact_item">
-					<img src="img/icon/telephone-min.png" alt="">
-					<p class="">8 (918) 089-20-20</p>
-				</div>
-				<div class="contact_item">
-					<img src="img/icon/email-min.png" alt="">
-					<p>kazakvezet@gmail.com</p>
-				</div>
-			</div>
+<body id="yak1">
 
-			<div id="arrow1" class="buttom">
-				<a href="#yak1">
-					<p>Заказать звонок</p>
-				</a>
-			</div>
+	<header class="main">
+		<img class="main__logo" src="img/logo.png" alt="">
+		<div class="main__text">
+			<p>Продажа материалов</p>
+			<p>Выполнение отделочных работ</p>
+			<p>Обучение</p>
+		</div>
+		<div class="main__contact">
+			<p><a href="tel:89186669821"><span class="gold__color">Тел: </span>8918-666-98-21</a></p>
+			<p>Ecomers2000@mail.ru</p>
 		</div>
 	</header>
 
+	<nav class="nav">
+		<ul>
+			<li class="nav__item"><a href="">Главная</a></li>
+			<li class="nav__item"><a href="">Имитация камня</a></li>
+			<li class="nav__item"><a href="">Обучение</a></li>
+			<li class="nav__item"><a href="">Материалы</a></li>
+			<li class="nav__item"><a href="">Галерея</a></li>
+			<li class="nav__item"><a href="">Контакты</a></li>
+		</ul>
+	</nav>
+	<div class="hamburger__menu">
+		<input id="menu__toggle" type="checkbox" />
+		<label class="menu__btn " for="menu__toggle">
+			<span></span>
+		</label>
 
-	<section>
-		<div class="owl">
-			<p>Доставка грузов</p>
-			<p>по всей <span class="orange_text">России</span></p>
-		</div>
+		<ul class="menu__box">
+			<li><a class="menu__item" href="">Главная</a></li>
+			<li><a class="menu__item" href="">Имитация камня</a></li>
+			<li><a class="menu__item" href="">Обучение</a></li>
+			<li><a class="menu__item" href="">Материалы</a></li>
+			<li><a class="menu__item" href="">Галерея</a></li>
+			<li><a class="menu__item" href="">Контакты</a></li>
+		</ul>
+	</div>
 
-		<div class="care">
-			<p class="orange_text">У нас в наличии</p>
-			<div class="available">
-				<div class="available_item t25">
-					<img src="img/stock/refrigerated-min.png" alt="">
-					<p>Рефрижераторы</p>
-				</div>
-				<div class="available_item">
-					<img src="img/stock/light_tonnage-min.png" alt="">
-					<p class="mp250">Малотоннажный транспорт</p>
-				</div>
-				<div class="available_item t25">
-					<img src="img/stock/tow_trucks-min.png" alt="">
-					<p>Эвакуаторы</p>
-				</div>
-				<div class="available_item t25">
-					<img src="img/stock/manipulators-min.png" alt="">
-					<p>Манипуляторы</p>
-				</div>
+	<div class="main2">
+		<div class="main__info">
+			<div class="main__info--text wow fadeInLeft" data-wow-delay="1s">
+				<p>Одень свой дом с <span class="gold__color">IMITEX</span></p>
+				<p>Имитация камня и дерева из бетона.</p>
+				<p>3D печатная штукатурка.</p>
+				<p>Экологическое, экотермическое, негорючее, и долговечное покрытие.</p>
+				<p>Не требует каких-либо дополнительных затрат на содержание.</p>
+				<p><span class="gold__color">Работаем по Краснодару и всему ЮФО.</span></p>
+			</div>
+			<!-- <div style="display: none" class="first_div2 main__info--text">
+				<p>Долговечность</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, perferendis quos, quidem quam possimus alias a, sapiente culpa commodi sed odit dolores totam ullam iste. Expedita asperiores laborum quis dolor.</p>
+			</div>
+			<div style="display: none" class="first_div3 main__info--text">
+				<p>Статус</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum provident tempore possimus id quasi consequuntur, accusamus asperiores delectus optio voluptate fugiat sint ipsam consequatur maxime quis magnam et ad.</p>
+			</div>
+			<div style="display: none" class="first_div4 main__info--text">
+				<p>Уверенность</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus enim ad ea dolore ab, iusto. Accusamus totam explicabo numquam reprehenderit asperiores voluptates necessitatibus pariatur, quasi amet commodi, voluptate nesciunt!</p>
+			</div>
+			<div style="display: none" class="first_div5 main__info--text">
+				<p>Надежность</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis porro vero nesciunt voluptatem animi commodi, fugiat itaque quod et culpa. Quia harum consequatur sequi eligendi ut, impedit suscipit, pariatur iure!</p>
+			</div> -->
+
+			<div class="main__info--btn wow fadeInLeft" data-wow-delay="1.5s">
+				<a href="galery.html">наши работы</a>
 			</div>
 
-			<p>Услуги</p>
-			<div class="available w260">
-				<div class="available_item">
-					<img src="img/services/cargo_transportation-min.jpg" alt="">
-					<p>Транспортировка груза</p>
-				</div>
-				<div class="available_item">
-					<img src="img/services/movers-min.jpg" alt="">
-					<p>Грузчики</p>
-				</div>
-				<div class="available_item">
-					<img src="img/services/garbage-min.jpg" alt="">
-					<p class="mp250">Вывоз строительного мусора</p>
-				</div>
-				<div class="available_item">
-					<img src="img/services/movers-min.jpg" alt="">
-					<p>Переезды</p>
-				</div>
+			<div id="cf7_controls" class="main__info--pagin wow fadeInLeft" data-wow-delay="2s">
+				<div class="btn1 button active selected"></div>
+				<div class="btn2 button"></div>
+				<div class="btn3 button"></div>
+				<div class="btn4 button"></div>
+				<div class="btn5 button"></div>
 			</div>
 		</div>
 
-
-
-		<div class="request">
-			<p><span class="orange_text">Оставьте заявку</span> и мы перезвоним</p>
-		</div>
-		<div class="form" id="yak2">
-			<div class="form_text">
-				<div class="fort_text--img">
-					<img src="img/icon/shipping-min.jpg" alt="">
-					<p>Хотите получить консультацию?</p>	
-				</div>
-				<div class="fort_text--img">
-					<img src="img/icon/consultation-min.jpg" alt="">
-					<p>Узнать стоимость и длительность перевозки?</p>	
-				</div>
-				<div class="fort_text--img">
-					<img src="img/icon/loading-min.jpg" alt="">
-					<p>Нужны услуги погрузки и разгрузки?</p>	
-				</div>
-			</div>
-
-			<div id="yak1" class="form_send">
-
-				<form action="mail.php" method="POST" class="ui-form">
-					<p><span class="orange_text">Закажите</span> обратный звонок</p>
-					<div class="form-row">
-						<input type="text" name="user_name" placeholder="ФИО" required>
+		<div class="main__form">
+			<div class="main__form--cont wow fadeInRight" data-wow-delay="1.5s">
+				<p>Узнайте подробнее</p>
+				<form action="" method="POST" >
+					<div class="main__form--row">
+						<input type="text" name="name" placeholder="Имя" required>
 					</div>
-
-					<div class="form-row">
-						<input type="text" name="user_phone" placeholder="Телефон" required >
+					<div class="main__form--row">
+						<input  id="phone1" type="tel" name="tel" placeholder="+7" required>
 					</div>
-
-					<div class="btm">
-						<button type="submit" value="ЗАКАЗАТЬ">ЗАКАЗАТЬ</button>
-					</div>
-
-					<p>Отправляя заявку, вы принимаете <a class="orange_text" href="OPD.pdf" target="_blank">условия обработки персональных данных</a></p>
+					<button class="main__form--btm" type="submit">перезвоните мне</button>
 				</form>
+				<p>Я даю своё согласие на <a class="gold__color" href="#">обработку персональных данных</a></p>
+			</div>
 
+			<div id="pagin" class="main__form--img wow fadeInRight" data-wow-delay="1s">
+				<img class='opaque' src="img/carousel/2018-05-16 15-34-48.JPG" alt="">
+				<img src="img/carousel/2013-06-02 13-27-28.JPG" alt="">
+				<img src="img/carousel/2013-06-02 13-29-40.JPG" alt="">
+				<img src="img/carousel/2014-02-28 19-05-49_1596267915045.JPG" alt="">
+				<img src="img/carousel/2018-03-21 08-41-02.JPG" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="main__form--cont main__form--m wow fadeInRight" data-wow-delay="1.5s">
+		<p>Узнайте подробнее</p>
+		<form action="" method="POST" >
+			<div class="main__form--row">
+				<input type="text" name="name" placeholder="Имя" required>
+			</div>
+			<div class="main__form--row">
+				<input  id="phone1" type="tel" name="tel" placeholder="+7" required>
+			</div>
+			<button class="main__form--btm" type="submit">перезвоните мне</button>
+		</form>
+		<p>Я даю своё согласие на <a class="gold__color" href="#">обработку персональных данных</a></p>
+	</div>
+
+	<div class="services-bg wow zoomIn" data-wow-delay="1.5s">
+		<div class="advantag__text advantag__text2">
+			<div class="advantag__text--item" id="advantag__text--1">
+				<p>НАШИ УСЛУГИ</p>
+			</div>
+			<div class="advantag__text--item" id="advantag__text--2">
+				<p>имитации камня и дерева</p>
+			</div>
+		</div>
+		<div class="services">
+			<div class="services__item">
+				<img src="img/services/2018-05-16 15-34-48.JPG" alt="">
+				<p>ФАСАДНЫЕ РАБОТЫ</p>
+			</div>
+			<div class="services__item">
+				<img src="img/services/2015-07-08 17-12-09.JPG" alt="">
+				<p>ОТДЕЛКА ЗАБОРОВ</p>
+			</div>
+			<div class="services__item">
+				<img src="img/services/2015-10-28 21-47-02.JPG" alt="">
+				<p>ЭЛЕМЕНТЫ ДЕКОРА</p>
+			</div>
+			<div class="services__item">
+				<img src="img/services/2017-11-02 14-45-28.JPG" alt="">
+				<p>ЛЕСТНИЦЫ - СТУПЕНИ</p>
+			</div>
+			<div class="services__item">
+				<img src="img/services/2015-02-19 18-43-04.JPG" alt="">
+				<p>ОТДЕЛКА ЦОКОЛЯ</p>
+			</div>
+			<div class="services__item">
+				<img src="img/services/2015-02-19 15-12-52.JPG" alt="">
+				<p>КАМИНЫ - БАРБЕКЮ</p>
+			</div>
+		</div>
+		<div class="services__more">
+			<a href="galery.html">больше наших работ</a>
+		</div>
+	</div>
+
+	<div class="advantag wow zoomIn">
+		<div class="advantag__text">
+			<div class="advantag__text--item" id="advantag__text--3">
+				<p>НАШИ</p>
+			</div>
+			<div class="advantag__text--item" id="advantag__text--4">
+				<p>ПРЕИМУЩЕСТВА</p>
 			</div>
 		</div>
 
-		<div class="provide">
-			<p>Мы предоставляем</p>
-			<img src="img/provide/car-min.jpg" alt="">
-			<img src="img/provide/trailer-min.jpg" alt="">
+		<div class="advantag__main">
+			<div class="advantag__item wow fadeInLeft" data-wow-delay="1s">
+				<img src="img/icon/medal.png" alt="">
+				<p>ВЫСОКОЕ КАЧЕСТВО</p>
+			</div>
+			<div class="advantag__item wow fadeInLeft" data-wow-delay=".5s">
+				<img src="img/icon/discount.png" alt="">
+				<p>НИЗКАЯ ЦЕНА</p>
+			</div>
+			<div class="advantag__item wow fadeInRight" data-wow-delay=".5s">
+				<img src="img/icon/paint.png" alt="">
+				<p>ИНДИВИДУАЛЬНЫЙ ДИЗАЙН</p>
+			</div>
+			<div class="advantag__item wow fadeInRight" data-wow-delay="1s">
+				<img src="img/icon/insurance.png" alt="">
+				<p>МИНИМАЛЬНЫЕ СРОКИ</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="about wow zoomIn" data-wow-delay="1.5s">
+		<div class="about__main">
+			<div class="about__number block">
+				<div class="about__number--item">
+					<p>более</p>
+					<p><span class="count">10</span><br>лет опыта</p>
+				</div>
+				<div class="about__number--item">
+					<p>более</p>
+					<p><span class="count">100</span><br>объектов</p>
+				</div>
+				<div class="about__number--item">
+					<p>более</p>
+					<p><span class="count">3500</span><br>кв.метров</p>
+				</div>
+			</div>
+			<div class="about__text">
+				<p>Наша компания занимается данной технологией с 2010 года.</p>
+				<p>Наше главное правило это - "довольный заказчик" и качественно выполненная в срок работа.</p>
+				<p>Мы дорожим своей репутацией над которой работали не один год.</p>
+			</div>
+			<div class="about__plus">
+				<div class="about__plus--item">
+					<img src="img/icon/clock.png" alt="">
+					<p>Вы экономите свое время, потому что мы идем в ногу со временем и используем только передовые технологии.</p>
+				</div>
+				<div class="about__plus--item">
+					<img src="img/icon/day.png" alt="">
+					<p>Мы работаем, Вы отдыхаете!</p>
+				</div>
+				<div class="about__plus--item">
+					<img src="img/icon/respect.png" alt="">
+					<p>Отношения с клиентами построены на принципах взаимного доверия и уважения.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="call">
+		<div class="call__text wow fadeInLeft" data-wow-delay=".5s">
+			<p>ОСТАЛИСЬ ВОПРОСЫ?</p>
+			<p><span class="gold__color">ЗВОНИТЕ!</span></p>
+			<img src="img/icon/call.png" alt="">
+			<p><a href="tel:89186669821"><span class="gold__color">Тел: </span>8918-666-98-21</a></p>
+			<p>Или <span class="gold__color">оставьте заявку</span> и мы перезвоним Вам!</p>
 		</div>
 
-	</section>
+		<div class="main__form--cont call__form--bottom wow fadeInRight" data-wow-delay=".5s">
+			<p>Узнайте подробнее</p>
+			<form action="" method="POST" >
+				<div class="main__form--row">
+					<input type="text" name="name" placeholder="Имя" required>
+				</div>
+				<div class="main__form--row">
+					<input  id="phone1" type="tel" name="tel" placeholder="+7" required>
+				</div>
+				<button class="main__form--btm" type="submit">перезвоните мне</button>
+			</form>
+			<p>Я даю своё согласие на <a class="gold__color" href="#">обработку персональных данных</a></p>
+		</div>
+
+		<div class="main__form--cont main__form--m wow fadeInRight" data-wow-delay="1.5s">
+			<p>Узнайте подробнее</p>
+			<form action="" method="POST" >
+				<div class="main__form--row">
+					<input type="text" name="name" placeholder="Имя" required>
+				</div>
+				<div class="main__form--row">
+					<input  id="phone1" type="tel" name="tel" placeholder="+7" required>
+				</div>
+				<button class="main__form--btm" type="submit">перезвоните мне</button>
+			</form>
+			<p>Я даю своё согласие на <a class="gold__color" href="#">обработку персональных данных</a></p>
+		</div>
+	</div>
 
 	<footer>
-		<div class="top">
-			<div class="contact">
-				<div class="contact_item">
-					<img src="img/icon/telephone-w-min.png" alt="">
-					<p class="">8 (918) 089-20-20</p>
-				</div>
-				<div class="contact_item">
-					<img src="img/icon/email-w-min.png" alt="">
-					<p>kazakvezet@gmail.com</p>
-				</div>
+		<nav class="nav nav__footer">
+			<ul>
+				<li class="nav__item nav__item--footer"><a href="">Главная</a></li>
+				<li class="nav__item"><a href="">Имитация камня</a></li>
+				<li class="nav__item"><a href="">Обучение</a></li>
+				<li class="nav__item"><a href="">Продажа материалов</a></li>
+				<li class="nav__item"><a href="">Галерея</a></li>
+				<li class="nav__item"><a href="">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="footer__main">
+			<div class="main__contact footer__connection">
+				<p><a href="tel:89186669821"><span class="gold__color">Тел: </span>8918-666-98-21</a></p>
+				<p>Ecomers2000@mail.ru</p>
 			</div>
-
-			<div class="logo">
-				<img src="img/logo-min.png" alt="">
+			<img class="main__logo footer__logo" src="img/logo.png" alt="">
+			<div class="footer__main--social">
+				<a href="https://www.instagram.com/imitex_krasnodar/"><img src="img/icon/instagram.png" alt=""></a>
+				<a href="https://vk.com/imitex_rsk"><img src="img/icon/vk.png" alt=""></a>
 			</div>
+		</div>
 
-			<div class="question">
-				<p>Остались вопросы?</p>
-				<div id="arrow1" class="buttom">
-					<a href="#yak1">
-						<p>Заказать звонок</p>
-					</a>
-				</div>
-			</div>
-
+		<div id="menu" class="footer__down">
+			<a href="#yak1">НАВЕРХ</a>
+			<p>© 2010 - 2020 г. Все права защищены</p>
 		</div>
 	</footer>
 
 </body>
+
+<script>
+	$(document).ready(function() {
+		$("#cf7_controls").on('click', 'div', function() {
+			$("#pagin img").removeClass("opaque");
+
+			var newImage = $(this).index();
+
+			$("#pagin img").eq(newImage).addClass("opaque");
+
+			$("#cf7_controls div").removeClass("selected");
+			$(this).addClass("selected");
+		});
+	});
+</script>
+
+<script>
+	$(document).ready(function () {
+		$(".btn1").click(function () {
+			$(".first_div5").hide();
+			$(".first_div4").hide();
+			$(".first_div3").hide();
+			$(".first_div2").hide();
+			$(".first_div1").show()
+		});
+		$(".btn2").click(function () {
+			$(".first_div5").hide();
+			$(".first_div4").hide();
+			$(".first_div3").hide();
+			$(".first_div1").hide();
+			$(".first_div2").show()
+		});
+		$(".btn3").click(function () {
+			$(".first_div5").hide();
+			$(".first_div4").hide();
+			$(".first_div1").hide();
+			$(".first_div2").hide();
+			$(".first_div3").show()
+		});
+		$(".btn4").click(function () {
+			$(".first_div5").hide();
+			$(".first_div1").hide();
+			$(".first_div3").hide();
+			$(".first_div2").hide();
+			$(".first_div4").show()
+		});
+		$(".btn5").click(function () {
+			$(".first_div1").hide();
+			$(".first_div4").hide();
+			$(".first_div3").hide();
+			$(".first_div2").hide();
+			$(".first_div5").show()
+		});
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$("#menu").on("click","a", function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 1500);
+		});
+	});
+</script>  
+
+<!-- <script>
+	$('.count').each(function () {
+		$(this).prop('Counter',0).animate({
+			Counter: $(this).text()
+		}, {
+			duration: 4000,
+			easing: 'swing',
+			step: function (now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+	});
+</script> -->
+
+<script src="js/main.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+
+<script src="wow/js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
 </html>
