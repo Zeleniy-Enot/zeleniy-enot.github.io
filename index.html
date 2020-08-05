@@ -71,22 +71,6 @@
 				<p>Не требует каких-либо дополнительных затрат на содержание.</p>
 				<p><span class="gold__color">Работаем по Краснодару и всему ЮФО.</span></p>
 			</div>
-			<!-- <div style="display: none" class="first_div2 main__info--text">
-				<p>Долговечность</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, perferendis quos, quidem quam possimus alias a, sapiente culpa commodi sed odit dolores totam ullam iste. Expedita asperiores laborum quis dolor.</p>
-			</div>
-			<div style="display: none" class="first_div3 main__info--text">
-				<p>Статус</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum provident tempore possimus id quasi consequuntur, accusamus asperiores delectus optio voluptate fugiat sint ipsam consequatur maxime quis magnam et ad.</p>
-			</div>
-			<div style="display: none" class="first_div4 main__info--text">
-				<p>Уверенность</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus enim ad ea dolore ab, iusto. Accusamus totam explicabo numquam reprehenderit asperiores voluptates necessitatibus pariatur, quasi amet commodi, voluptate nesciunt!</p>
-			</div>
-			<div style="display: none" class="first_div5 main__info--text">
-				<p>Надежность</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis porro vero nesciunt voluptatem animi commodi, fugiat itaque quod et culpa. Quia harum consequatur sequi eligendi ut, impedit suscipit, pariatur iure!</p>
-			</div> -->
 
 			<div class="main__info--btn wow fadeInLeft" data-wow-delay="1.5s">
 				<a href="galery.html">наши работы</a>
@@ -103,13 +87,13 @@
 
 		<div class="main__form">
 			<div class="main__form--cont wow fadeInRight" data-wow-delay="1.5s">
-				<p>Узнайте подробнее</p>
+				<p>Обратный звонок</p>
 				<form action="" method="POST" >
 					<div class="main__form--row">
 						<input type="text" name="name" placeholder="Имя" required>
 					</div>
 					<div class="main__form--row">
-						<input  id="phone1" type="tel" name="tel" placeholder="+7" required>
+						<input class="phone1" type="tel" name="tel" placeholder="+7" required>
 					</div>
 					<button class="main__form--btm" type="submit">перезвоните мне</button>
 				</form>
@@ -125,20 +109,19 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="main__form--cont main__form--m wow fadeInRight" data-wow-delay="1.5s">
-		<p>Узнайте подробнее</p>
+	<!-- <div class="main__form--cont main__form--m wow fadeInRight" data-wow-delay="1.5s">
+		<p>Обратный звонок</p>
 		<form action="" method="POST" >
 			<div class="main__form--row">
 				<input type="text" name="name" placeholder="Имя" required>
 			</div>
 			<div class="main__form--row">
-				<input  id="phone1" type="tel" name="tel" placeholder="+7" required>
+				<input  class="phone1" type="tel" name="tel" placeholder="+7" required>
 			</div>
 			<button class="main__form--btm" type="submit">перезвоните мне</button>
 		</form>
 		<p>Я даю своё согласие на <a class="gold__color" href="#">обработку персональных данных</a></p>
-	</div>
+	</div> -->
 
 	<div class="services-bg wow zoomIn" data-wow-delay="1.5s">
 		<div class="advantag__text advantag__text2">
@@ -234,7 +217,7 @@
 			<div class="about__plus">
 				<div class="about__plus--item">
 					<img src="img/icon/clock.png" alt="">
-					<p>Вы экономите свое время, потому что мы идем в ногу со временем и используем только передовые технологии.</p>
+					<p>Вы экономите свое время, потому что мы идем в ногу со временем.</p>
 				</div>
 				<div class="about__plus--item">
 					<img src="img/icon/day.png" alt="">
@@ -258,13 +241,13 @@
 		</div>
 
 		<div class="main__form--cont call__form--bottom wow fadeInRight" data-wow-delay=".5s">
-			<p>Узнайте подробнее</p>
+			<p>Обратный звонок</p>
 			<form action="" method="POST" >
 				<div class="main__form--row">
 					<input type="text" name="name" placeholder="Имя" required>
 				</div>
 				<div class="main__form--row">
-					<input  id="phone1" type="tel" name="tel" placeholder="+7" required>
+					<input class="phone1" type="tel" name="tel" placeholder="+7" required>
 				</div>
 				<button class="main__form--btm" type="submit">перезвоните мне</button>
 			</form>
@@ -272,13 +255,13 @@
 		</div>
 
 		<div class="main__form--cont main__form--m wow fadeInRight" data-wow-delay="1.5s">
-			<p>Узнайте подробнее</p>
+			<p>Обратный звонок</p>
 			<form action="" method="POST" >
 				<div class="main__form--row">
 					<input type="text" name="name" placeholder="Имя" required>
 				</div>
 				<div class="main__form--row">
-					<input  id="phone1" type="tel" name="tel" placeholder="+7" required>
+					<input class="phone1" type="tel" name="tel" placeholder="+7" required>
 				</div>
 				<button class="main__form--btm" type="submit">перезвоните мне</button>
 			</form>
@@ -316,72 +299,6 @@
 	</footer>
 
 </body>
-
-<script>
-	$(document).ready(function() {
-		$("#cf7_controls").on('click', 'div', function() {
-			$("#pagin img").removeClass("opaque");
-
-			var newImage = $(this).index();
-
-			$("#pagin img").eq(newImage).addClass("opaque");
-
-			$("#cf7_controls div").removeClass("selected");
-			$(this).addClass("selected");
-		});
-	});
-</script>
-
-<script>
-	$(document).ready(function () {
-		$(".btn1").click(function () {
-			$(".first_div5").hide();
-			$(".first_div4").hide();
-			$(".first_div3").hide();
-			$(".first_div2").hide();
-			$(".first_div1").show()
-		});
-		$(".btn2").click(function () {
-			$(".first_div5").hide();
-			$(".first_div4").hide();
-			$(".first_div3").hide();
-			$(".first_div1").hide();
-			$(".first_div2").show()
-		});
-		$(".btn3").click(function () {
-			$(".first_div5").hide();
-			$(".first_div4").hide();
-			$(".first_div1").hide();
-			$(".first_div2").hide();
-			$(".first_div3").show()
-		});
-		$(".btn4").click(function () {
-			$(".first_div5").hide();
-			$(".first_div1").hide();
-			$(".first_div3").hide();
-			$(".first_div2").hide();
-			$(".first_div4").show()
-		});
-		$(".btn5").click(function () {
-			$(".first_div1").hide();
-			$(".first_div4").hide();
-			$(".first_div3").hide();
-			$(".first_div2").hide();
-			$(".first_div5").show()
-		});
-	});
-</script>
-
-<script>
-	$(document).ready(function(){
-		$("#menu").on("click","a", function (event) {
-			event.preventDefault();
-			var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 1500);
-		});
-	});
-</script>  
 
 <!-- <script>
 	$('.count').each(function () {
