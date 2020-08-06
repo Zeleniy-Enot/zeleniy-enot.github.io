@@ -87,13 +87,13 @@ a{
 		font-size: 16px;
 	}
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 570px){
 	.main {
-		-webkit-flex-wrap: wrap;
-		-moz-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		-o-flex-wrap: wrap;
-		flex-wrap: wrap;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
 		justify-content: center;
 		padding: 10px 20px;
 	}
@@ -265,7 +265,7 @@ a{
 		width: 130px;
 	}
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 565px) {
 	.menu__box {
 		width: 100%;
 		box-shadow: none;
@@ -525,7 +525,7 @@ a{
 
 /*SERVICES*/
 .services-bg{
-	/*border-top: 2px solid #dda928;*/
+	border-top: 2px solid #dda928;
 	/*#272727*/
 	background-color: #1b1b1b;
 	padding-top: 40px;
@@ -613,7 +613,13 @@ a{
 	background-color: #fff;
 	color: #dda928;
 }
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 850px) {
+	.services-bg {
+		border-top: none;
+	}
+}
+@media screen and (max-width: 520px) {
 	#advantag__text--1 {
 		max-width: 180px;
 		margin-top: -10px;
@@ -692,23 +698,44 @@ a{
 	display: -o-flex;
 	display: flex;
 	text-align: center;
-	justify-content: space-between;
+	justify-content: center;;
+}
+.advantag__block{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
 }
 .advantag__item{
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 200px;
 }
 .advantag__item p{
-	padding-top: 20px;
+	line-height: 24px;
+	padding-top: 10px;
 	font-family: "M_Regular", sans-serif;
 }
 .advantag__item img{
 	width: 100px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 850px) {
+	.advantag__block{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.advantag__item{
+		padding-bottom: 20px;
+	}
+}
+@media screen and (max-width: 520px) {
 	.advantag {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 		padding: 0px;
 		padding-top: 40px;
 	}
@@ -880,6 +907,7 @@ a{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 .call__text{
 	text-align: center;
@@ -987,8 +1015,12 @@ footer{
 	font-family: "M_ExtraLight", sans-serif;
 	font-size: 12px;
 }
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 850px) {
+	.footer__main{
+		border-top: 2px solid #dda928;
+	}
+}
+@media screen and (max-width: 700px) {
 	.footer__main{
 		padding: 20px 20px;
 		-webkit-flex-direction: column;
