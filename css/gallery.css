@@ -1,0 +1,24 @@
+.gallery__wrapper {
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+@media screen and (max-width: 1220px) {
+	.gallery__wrapper {
+		max-width: 900px;
+	} 
+}
+@media screen and (max-width: 900px) {
+	.gallery__wrapper {
+		max-width: 600px;
+	} 
+}
+@media screen and (max-width: 600px) {
+	.gallery__wrapper {
+		max-width: 300px;
+	} 
+}
+.galleria {
+	height: 600px;
+}
