@@ -1,5 +1,7 @@
 /*CONTACT*/
 .contact{
+	margin-top: 40px;
+	margin-bottom: 40px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -11,8 +13,11 @@
 	-o-flex-direction: column;
 	flex-direction: column;
 }
+.contact > p{
+	font-family: "M_Medium", sans-serif;
+	font-size: 32px;
+}
 .contact__item{
-	margin-bottom: 40px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -32,13 +37,13 @@
 }
 .contact__item p{
 	font-family: "M_Regular", sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 28px;
 	padding-bottom: 15px;
 }
 .contact__item p:nth-child(1){
 	font-family: "M_Medium", sans-serif;
-	font-size: 28px;
+	font-size: 24px;
 	text-align: center;
 	padding-bottom: 20px;
 }
@@ -66,32 +71,3 @@
 		max-height: 300px;
 	} 
 }
-
-
-/*TEAM*/
-/*.team__block{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
-	-o-flex-direction: column;
-	flex-direction: column;
-	justify-content: flex-start;
-}
-.team__block p{
-	font-family: "M_Regular", sans-serif;
-	font-size: 22px;
-	line-height: 28px;
-	padding-bottom: 15px;
-}
-.team__block p:nth-child(1){
-	font-family: "M_Medium", sans-serif;
-	font-size: 28px;
-	text-align: center;
-	padding-bottom: 20px;
-	}*/
-
