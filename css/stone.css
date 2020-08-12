@@ -506,6 +506,7 @@
 .feature{
 	padding: 40px 10px;
 	max-width: 1200px;
+	border-radius: 10px;
 }
 .feature__item{
 	width: 250px;

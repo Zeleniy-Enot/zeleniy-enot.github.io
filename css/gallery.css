@@ -17,6 +17,8 @@
 @media screen and (max-width: 600px) {
 	.gallery__wrapper {
 		max-width: 300px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	} 
 }
 .galleria {
