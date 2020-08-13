@@ -374,7 +374,6 @@ a{
 .slide{
 	height: 400px;
 }
-
 @media screen and (max-width: 1220px) {
 	.info > p{
 		padding-left: 20px;
@@ -460,6 +459,7 @@ a{
 		margin-left: 10px;
 		margin-right: 10px;
 		padding: 10px;
+		padding-bottom: 0;
 	}
 	.info__utp--text {
 		margin-right: 0px;
@@ -858,7 +858,7 @@ a{
 	}
 	.services {
 		font-size: 14px;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
 	.services__more a{
 		padding: 15px;
