@@ -1,7 +1,7 @@
 .material{
-	margin-top: 40px;
 	border-radius: 10px;
 	margin: auto;
+	margin-top: 40px;
 }
 .material p{
 	font-family: "M_Medium", sans-serif;
@@ -25,6 +25,7 @@
 
 @media screen and (max-width: 425px) {
 	.material{
+		padding-bottom: 20px;
 		margin-top: 0px;
 		margin-left: 10px;
 		margin-right: 10px;
