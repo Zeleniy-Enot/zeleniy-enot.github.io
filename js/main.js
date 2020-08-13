@@ -1,3 +1,11 @@
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 500);
+}
+
 $(document).ready(function() {
     $("#cf7_controls").on('click', 'div', function() {
         $("#pagin img").removeClass("opaque");
@@ -70,7 +78,3 @@ $(function () {
         });
     });
 }); 
-
-
-
-
