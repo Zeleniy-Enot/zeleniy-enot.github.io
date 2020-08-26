@@ -1,88 +1,67 @@
-window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-    }, 500);
-}
-
-$(document).ready(function() {
-    $("#cf7_controls").on('click', 'div', function() {
-        $("#pagin img").removeClass("opaque");
-
-        var newImage = $(this).index();
-
-        $("#pagin img").eq(newImage).addClass("opaque");
-
-        $("#cf7_controls div").removeClass("selected");
-        $(this).addClass("selected");
-    });
-});
-
 $(function(){
-  $(".phone1").mask("+7(999) 999-9999");
+	$(".phone1").mask("+7(999) 999-9999");
 });
 
-$(function()
-{
-    var button = $('.button');
-    function switchToNext()
-    {
-        var _this = $(this);
-        if(_this.hasClass('active'))
-            return false;
-        else
-        {
-            $('.button.active').removeClass('active');
-            _this.addClass('active');
-        }
-    }
-    button.on('click',switchToNext);
+window.addEventListener("load", () => {
+	var carousels = document.querySelectorAll(".carousel-3d");
+	for (var i = 0; i < carousels.length; i++) {
+		carousel(carousels[i]);
+	}
 });
+function carousel(root) {
+	var figure = root.querySelector("figure"),
+	nav = root.querySelector("nav"),
+	images = figure.children,
+	n = images.length,
+	gap = root.dataset.gap || 0,
+	bfc = "bfc" in root.dataset,
+	theta = 2 * Math.PI / n,
+	currImage = 0;
+	setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+	window.addEventListener("resize", () => {
+		setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+	});
+	setupNavigation();
+	function setupCarousel(n, s) {
+		var apothem = s / (2 * Math.tan(Math.PI / n));
+		figure.style.transformOrigin = `50% 50% ${-apothem}px`;
+		for (var i = 0; i < n; i++) images[i].style.padding = `0 ${gap}px`;
+			for (i = 0; i < n; i++) {
+				images[i].style.transformOrigin = `50% 50% ${-apothem}px`;
+				images[i].style.transform = `rotateY(${i * theta}rad)`;
+			}
+			if (bfc)
+				for (i = 0; i < n; i++) images[i].style.backfaceVisibility = "hidden";
+					rotateCarousel(currImage);
+			}
+			function setupNavigation() {
+				nav.addEventListener("click", onClick, true);
+				function onClick(e) {
+					e.stopPropagation();
+					var t = e.target;
+					if (t.tagName.toUpperCase() != "BUTTON") return;
+					if (t.classList.contains("next")) {
+						currImage++;
+					} else {
+						currImage--;
+					}
+					rotateCarousel(currImage);
+				}
+			}
+			function rotateCarousel(imageIndex) {
+				figure.style.transform = `rotateY(${imageIndex * -theta}rad)`;
+			}
+		}
 
-$(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
-$(document).ready(function(){
-    $("#menu2").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
-
-$(function () {
-    //script for popups
-    $('a.show_popup').click(function () {
-        $('div.'+$(this).attr("rel")).fadeIn(500);
-        $("body").append("<div id='overlay'></div>");
-        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
-        return false;               
-    }); 
-    $('a.close').click(function () {
-        $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
-        return false;
-    });
-    
-    //script for tabs
-    $("div.selectTabs").each(function () {
-        var tmp = $(this);
-        $(tmp).find(".lineTabs li").each(function (i) {
-            $(tmp).find(".lineTabs li:eq("+i+") a").click(function(){
-                var tab_id=i+1;
-                $(tmp).find(".lineTabs li").removeClass("active");
-                $(this).parent().addClass("active");
-                $(tmp).find(".tab_content div").stop(false,false).hide();
-                $(tmp).find(".tab"+tab_id).stop(false,false).fadeIn(300);
-                return false;
-            });
-        });
-    });
-}); 
+		$(document).ready(function(){
+			$('.spoiler-body').hide();
+			$('.spoiler-title').click(function(){
+				$(this).toggleClass('opened').toggleClass('closed').next().slideToggle();
+				// if($(this).hasClass('opened')) {
+				// 	$(this).html('Скрыть текст');
+				// }
+				// else {
+				// 	$(this).html('Показать текст');
+				// }
+			});
+		});

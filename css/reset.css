@@ -27,9 +27,9 @@ body {
 	line-height: 1;
 }
 ol, ul, a {
+	text-decoration: none;
 	list-style: none;
 	color: black;
-	text-decoration: none;
 }
 blockquote, q {
 	quotes: none;
