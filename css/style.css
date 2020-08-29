@@ -1731,6 +1731,7 @@
 	text-transform: uppercase;
 }
 .stage img{
+	overflow: hidden;
 	width: 117%;
 	position: absolute;
 	top: 197px;
@@ -2380,7 +2381,7 @@ footer{
 }
 .bottom__form{
 	position: absolute;
-	top: -320px;
+	top: -300px;
 	right: 0;
 	left: 0;
 	width: 360px;
