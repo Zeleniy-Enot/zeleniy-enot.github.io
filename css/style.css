@@ -7,7 +7,6 @@
 .wrapper{
 	max-width: 1200px;
 	margin: auto;
-	
 } 
 .main{
 	background-color: #fff;
@@ -189,7 +188,6 @@
 	-ms-align-items: center;
 	align-items: center;
 }
-
 .top__main--prise_btn{
 	padding: 25px 30px;
 	border-radius: 31.5px;
@@ -214,7 +212,6 @@
 	-webkit-transition: ease 0.3s;
 	transition: ease 0.3s;
 }
-
 .custom-btn:before {
 	content: "";
 	display: block;
@@ -265,7 +262,6 @@
 	30% { left: 110%; margin-left: 80px; }
 	100% { left: 110%; margin-left: 80px; } 
 }
-
 .top__main--prise > p{
 	margin-left: 30px;
 	font-size: 14px;
@@ -1615,7 +1611,7 @@
 	/*border-bottom: 1px solid;*/
 }
 .slide img{
-	width: 250px!important;
+	width: 200px!important;
 	height: auto;
 	margin: auto;
 	padding-bottom: 20px;
