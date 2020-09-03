@@ -1,7 +1,9 @@
+/*Маска телефона*/
 $(function(){
 	$(".phone1").mask("+7(999) 999-9999");
 });
 
+/*Карусель лиц*/
 window.addEventListener("load", () => {
 	var carousels = document.querySelectorAll(".carousel-3d");
 	for (var i = 0; i < carousels.length; i++) {
@@ -53,15 +55,43 @@ function carousel(root) {
 			}
 		}
 
-		$(document).ready(function(){
-			$('.spoiler-body').hide();
-			$('.spoiler-title').click(function(){
-				$(this).toggleClass('opened').toggleClass('closed').next().slideToggle();
-				// if($(this).hasClass('opened')) {
-				// 	$(this).html('Скрыть текст');
-				// }
-				// else {
-				// 	$(this).html('Показать текст');
-				// }
-			});
-		});
+/*Скрытие и отображение текста*/
+$(document).ready(function(){
+	$('.spoiler-body').hide();
+	$('.spoiler-title').click(function(){
+		$(this).toggleClass('opened').toggleClass('closed').next().slideToggle();
+	});
+});
+
+		
+/*Счетчик*/
+var time = 2, cc = 1;
+$(window).scroll(function(){
+	$('#counter').each(function(){
+		var
+		cPos = $(this).offset().top,
+		topWindow = $(window).scrollTop();
+		height =  window.innerHeight;
+		if (cPos < topWindow + (height / 100 * 90)) {
+			if(cc < 2){
+				$('p').each(function(){
+					var
+					i = 1,
+					num = $(this).data('num'),
+					step = 1500 * time / num,
+					that = $(this),
+					int = setInterval(function(){
+						if (i <= num) {
+							that.html(i);
+						}
+						else {
+							cc = cc + 2;
+							clearInterval(int);
+						}
+						i++;
+					},step);
+				});
+			}
+		}
+	});
+});
