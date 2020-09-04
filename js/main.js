@@ -95,8 +95,3 @@ $(window).scroll(function(){
 		}
 	});
 });
-
-/*Меню*/
-$(document).ready(function() {
-	t228_createMobileMenu('138509734');
-});
