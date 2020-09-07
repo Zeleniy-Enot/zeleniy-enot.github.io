@@ -1,11 +1,11 @@
-/*Прелоядер*/
-// window.onload = function () {
-//   document.body.classList.add('loaded_hiding');
-//   window.setTimeout(function () {
-//     document.body.classList.add('loaded');
-//     document.body.classList.remove('loaded_hiding');
-//   }, 500);
-// }
+/*Прелоадер*/
+window.onload = function () {
+	document.body.classList.add('loaded_hiding');
+	window.setTimeout(function () {
+		document.body.classList.add('loaded');
+		document.body.classList.remove('loaded_hiding');
+	}, 500);
+}
 
 /*Маска телефона*/
 $(function(){
@@ -64,48 +64,48 @@ function carousel(root) {
 			}
 		}
 
-/*Скрытие и отображение текста*/
-$(document).ready(function(){
-	$('.spoiler-body').hide();
-	$('.spoiler-title').click(function(){
-		$(this).toggleClass('opened').toggleClass('closed').next().slideToggle();
-	});
-});
+		/*Скрытие и отображение текста*/
+		$(document).ready(function(){
+			$('.spoiler-body').hide();
+			$('.spoiler-title').click(function(){
+				$(this).toggleClass('opened').toggleClass('closed').next().slideToggle();
+			});
+		});
 
 		
-/*Счетчик*/
-var time = 2, cc = 1;
-$(window).scroll(function(){
-	$('#counter').each(function(){
-		var
-		cPos = $(this).offset().top,
-		topWindow = $(window).scrollTop();
-		height =  window.innerHeight;
-		if (cPos < topWindow + (height / 100 * 90)) {
-			if(cc < 2){
-				$('p').each(function(){
-					var
-					i = 1,
-					num = $(this).data('num'),
-					step = 1500 * time / num,
-					that = $(this),
-					int = setInterval(function(){
-						if (i <= num) {
-							that.html(i);
-						}
-						else {
-							cc = cc + 2;
-							clearInterval(int);
-						}
-						i++;
-					},step);
-				});
-			}
-		}
-	});
-});
+		/*Счетчик*/
+		var time = 2, cc = 1;
+		$(window).scroll(function(){
+			$('#counter').each(function(){
+				var
+				cPos = $(this).offset().top,
+				topWindow = $(window).scrollTop();
+				height =  window.innerHeight;
+				if (cPos < topWindow + (height / 100 * 90)) {
+					if(cc < 2){
+						$('p').each(function(){
+							var
+							i = 1,
+							num = $(this).data('num'),
+							step = 1500 * time / num,
+							that = $(this),
+							int = setInterval(function(){
+								if (i <= num) {
+									that.html(i);
+								}
+								else {
+									cc = cc + 2;
+									clearInterval(int);
+								}
+								i++;
+							},step);
+						});
+					}
+				}
+			});
+		});
 
-/*Меню*/
-$(document).ready(function() {
-	t228_createMobileMenu('138509734');
-});
+		/*Меню*/
+		$(document).ready(function() {
+			t228_createMobileMenu('138509734');
+		});
