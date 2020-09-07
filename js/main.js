@@ -7,6 +7,19 @@ window.onload = function () {
 	}, 500);
 }
 
+/*Карусель OWL*/
+$(function() {
+	$(".owl-carousel").owlCarousel({
+		loop: true,
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items:1,
+			}
+		}
+	});
+});
+
 /*Маска телефона*/
 $(function(){
 	$(".phone1").mask("+7(999) 999-9999");
