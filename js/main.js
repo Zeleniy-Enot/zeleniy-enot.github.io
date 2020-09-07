@@ -1,3 +1,12 @@
+/*Прелоядер*/
+// window.onload = function () {
+//   document.body.classList.add('loaded_hiding');
+//   window.setTimeout(function () {
+//     document.body.classList.add('loaded');
+//     document.body.classList.remove('loaded_hiding');
+//   }, 500);
+// }
+
 /*Маска телефона*/
 $(function(){
 	$(".phone1").mask("+7(999) 999-9999");
@@ -94,4 +103,9 @@ $(window).scroll(function(){
 			}
 		}
 	});
+});
+
+/*Меню*/
+$(document).ready(function() {
+	t228_createMobileMenu('138509734');
 });
