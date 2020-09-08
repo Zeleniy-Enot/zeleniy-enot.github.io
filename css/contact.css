@@ -6,7 +6,7 @@
 /*TOP*/
 @media screen and (max-width: 980px){
 	.t228__burger span {
-		background-color: #000;
+		background-color: #000!important;
 	}
 	.t228__list_item a, .t228__list_item span{
 		color: #000!important;
