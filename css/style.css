@@ -217,7 +217,7 @@
 	text-align: center;
 }
 .main__form--row input{
-	width: 360px;
+	width: 300px;
 	height: 65px;
 	border-radius: 10px;
 	box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
@@ -229,12 +229,12 @@
 	box-sizing: border-box;
 	padding-left: 20px;
 	margin-bottom: 20px;
-	/*border: none; */
 	outline: none;
 }
 .main__form--btm{
-	width: 360px;
+	width: 300px;
 	height: 65px;
+	margin-top: 5px;
 	border-radius: 10px;
 	box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
 	background-color: #00a99d;
@@ -470,7 +470,7 @@
 @media screen and (max-width: 880px){
 	.important__block--item {
 		margin-left: 20px;
-		margin-right: 0px;
+		margin-right: 20px;
 	}
 	.important__block--item_icon {
 		top: -45px;
@@ -591,7 +591,6 @@
 .services_block--item_tape{
 	width: 500px;
 	margin: 0 auto;
-	background-color: #fff;
 }
 .services_block--item_tape > p{
 	position: relative;
@@ -1011,7 +1010,7 @@
 		padding: 15px 20px;
 	}
 	.number__block--item {
-		width: 122px;
+		width: 28.7%;
 		margin-bottom: 20px;
 	}
 	.number p:nth-child(4) {
@@ -1318,21 +1317,77 @@
 	font-family: "Regular", sans-serif;
 }
 .form__radio > input{
+	cursor: pointer;
 	margin-bottom: 11px;
 	margin-right: 10px;
 }
-.main__form--row input{
+
+.form__contact{
 	width: 300px;
 }
-.main__form--btm{
-	margin-top: 5px;
-	width: 300px;  
+.item input{
+	width: 300px;
+	height: 65px;
+	border-radius: 10px;
+	box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
+	background-color: #ffffff;
+	font-size: 18px;
+	font-family: "Regular", sans-serif;
+	color: #565766;
+	border: 1px solid #d8d9eb;
+	box-sizing: border-box;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	outline: none;
+}
+.main__form--radio{
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-family: "Regular", sans-serif;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+fieldset{
+	display: none;
+	padding: 0;
+}
+.main__form--radio p{
+	padding: 5px;
+}
+.main__form--radio input{
+	margin-top: 3px;
+	cursor: pointer;
+}
+.main__form--radio input:nth-child(2){
+	margin-right: 19px;
+}
+.item1{
+	width: 300px;
+}
+.item1 > p{
+	text-align: center;
+	font-family: "Regular", sans-serif;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+.form__contact > p{
+	text-align: center;
 }
 .form__contact > p:first-child{
 	font-family: "Regular", sans-serif;
 	font-size: 24px;
 	padding-bottom: 20px;
-	text-align: center;
+}
+.form__contact > p:nth-child(5){
+	font-family: "Regular", sans-serif;
+	font-size: 20px;
+	padding-bottom: 5px;
 }
 .form__contact > p:last-child{
 	font-family: "Light", sans-serif;
@@ -1340,7 +1395,6 @@
 	margin: auto;
 	font-size: 9px;
 	line-height: normal;
-	text-align: center;
 	color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1517,8 +1571,11 @@
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.owl-carousel .slideimghosp{
+	width: 280px!important;
+}
 .owl-carousel .slideimgcar{
-	width: 100px!important;
+	width: 80px!important;
 }
 .owl-carousel .slide:last-child img{
 	width: 200px;
@@ -1627,6 +1684,9 @@
 	.slide {
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+	.owl-carousel .slideimghosp{
+		width: 180px!important;
 	}
 	.slide__text {
 		padding-bottom: 15px;
