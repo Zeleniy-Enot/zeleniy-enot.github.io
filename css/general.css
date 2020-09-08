@@ -283,16 +283,15 @@
 	}
 	.t-submenu__link-item li a{
 		font-size: 18px;
-		color: #fff;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		font-family: "Regular", sans-serif;
 	}
-	.t228__list_item a, .t228__list_item span{
-		color: #fff;
+	.t-submenu__link-item li:last-child a{
+		padding-bottom: 0px;
 	}
-	.t228__list li:nth-child(2) {
-		padding-bottom: 5px!important;
+	.t228__list_item a, .t228__list_item span{
+		color: #fff!important;
 	}
 	.t228 .t228__list_item {
 		padding: 15px!important;
