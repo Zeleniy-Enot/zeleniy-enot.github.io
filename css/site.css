@@ -153,8 +153,8 @@
 	}
 	.site__top--text{
 		position: initial;
-		padding-top: 60px;
-		padding-bottom: 28px;
+		margin-top: 60px;
+		margin-bottom: 28px;
 	}
 	.site__top--video{
 		right: 50%;
@@ -204,10 +204,10 @@
 	}
 	.site__top--video img{
 		width: 508px;
-		height: 428px;
+		height: 429px;
 	}
 	#trailer {
-		height: 428px;
+		height: 429px;
 	}
 }
 
