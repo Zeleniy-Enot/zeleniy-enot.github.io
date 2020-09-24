@@ -523,6 +523,7 @@
 	align-items: center;
 }
 .top__main--prise_btn p{
+	text-transform: uppercase;
 	font-size: 14px;
 	font-family: "Medium", sans-serif;
 	color: #fff;
@@ -714,6 +715,7 @@
 	font-family: "Bold", sans-serif;
 	text-transform: uppercase;
 	color: #fff;
+	line-height: 1.4;
 	cursor: pointer;
 	border: none; 
 	outline: none;
