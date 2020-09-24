@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
 			dots: false,
 			animateOut: 'slideOutDown',
 			animateIn: 'slideInDown',
-			autoplay: true,
+			// autoplay: true,
 			autoplayTimeout: 5000,
 			responsive:{
 				0:{
