@@ -153,16 +153,15 @@
 	}
 	.site__top--text{
 		position: initial;
+		height: 389px;
 		margin-top: 60px;
-		margin-bottom: 28px;
 	}
 	.site__top--video{
 		right: 50%;
 		transform: translate(50%,0%);
 	}
-	header{
-		margin-left: 0!important;
-		margin-right: 0!important;
+	.site__top--video img {
+		z-index: 10;
 	}
 }
 @media screen and (max-width: 425px){
@@ -204,7 +203,7 @@
 	}
 	.site__top--video img{
 		width: 508px;
-		height: 429px;
+		height: 430px;
 	}
 	#trailer {
 		height: 429px;
