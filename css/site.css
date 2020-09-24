@@ -141,6 +141,7 @@
 	header{
 		padding-left: 0!important;
 		padding-right: 0!important;
+		overflow-x: hidden;
 	}
 	.site__top {
 		-webkit-flex-direction: column;
@@ -149,7 +150,6 @@
 		-o-flex-direction: column;
 		flex-direction: column;
 		padding-top: 0px;
-		overflow: hidden;
 	}
 	.site__top--text{
 		position: initial;
@@ -157,11 +157,11 @@
 		margin-bottom: 25px;
 	}
 	.site__top--video{
-		bottom: -10px;
+		bottom: -3px;
 		right: 50%;
 		transform: translate(50%,0%);
 	}
-	.site__top--video img {
+	.site__top--video img{
 		z-index: 10;
 	}
 }
@@ -1543,14 +1543,11 @@ footer{
 	}
 }
 @media screen and (max-width: 425px){
-	footer {
-		margin-top: 120px;
-	}
 	.site__bottom--form > p:nth-child(2) {
 		max-width: 223px;
 	}
 	.site__call{
-		padding-top: 110px;
+		padding-top: 130px;
 	}
 	.site__bottom--form {
 		padding: 20px;
