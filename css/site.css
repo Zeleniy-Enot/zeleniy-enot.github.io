@@ -1,13 +1,23 @@
 @media screen and (max-width: 1220px){
 	.wrapper{
+<<<<<<< HEAD
 		padding-left: 20px;
 		padding-right: 20px;
+=======
+		margin-left: 20px;
+		margin-right: 20px;
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
 	}
 }
 @media screen and (max-width: 425px){
 	.wrapper{
+<<<<<<< HEAD
 		padding-left: 10px;
 		padding-right: 10px;
+=======
+		margin-left: 10px;
+		margin-right: 10px;
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
 	}
 }
 /*TOP*/
@@ -138,10 +148,13 @@
 	}	
 }
 @media screen and (max-width: 625px){
+<<<<<<< HEAD
 	header{
 		padding-left: 0!important;
 		padding-right: 0!important;
 	}
+=======
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
 	.site__top {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -429,8 +442,11 @@
 		-ms-align-items: stretch;
 		align-items: stretch;
 		padding-top: 20px;
+<<<<<<< HEAD
 		padding-bottom: 20px;
 		background-color: #fff;
+=======
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
 	}
 	.service__block{
 		align-items: center;
@@ -454,6 +470,12 @@
 	.service__content img {
 		max-width: 100%;
 	}
+<<<<<<< HEAD
+=======
+	.service {
+		padding-bottom: 20px;
+	}
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
 }
 
 /*PRICE*/
@@ -1535,20 +1557,30 @@ footer{
 	.site__call{
 		margin-bottom: 20px;
 	}
+<<<<<<< HEAD
 	.site__footer--logo p {
 		text-align: center;
 	}
+=======
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
 }
 @media screen and (max-width: 425px){
 	footer {
 		margin-top: 120px;
+<<<<<<< HEAD
+=======
+		padding-top: 170px;
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
 	}
 	.site__bottom--form > p:nth-child(2) {
 		max-width: 223px;
 	}
+<<<<<<< HEAD
 	.site__call{
 		padding-top: 110px;
 	}
+=======
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
 	.site__bottom--form {
 		padding: 20px;
 	}
@@ -1571,4 +1603,8 @@ footer{
 	padding-bottom: 0;
 	padding-top: 40px;
 	margin-bottom: -10px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 690967d274f6a8758045b25e29e996cf7dd8b6bd
