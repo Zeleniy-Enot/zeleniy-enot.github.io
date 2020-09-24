@@ -204,7 +204,10 @@
 	}
 	.site__top--video img{
 		width: 508px;
-		height: auto;
+		height: 428px;
+	}
+	#trailer {
+		height: 428px;
 	}
 }
 
