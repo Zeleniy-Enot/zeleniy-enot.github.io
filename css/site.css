@@ -127,10 +127,13 @@
 		top: 60px;
 		left: 0;
 	}
+	.site__top{
+		position: relative;
+	}
 	.site__top--video{
 		position: absolute;
 		bottom: -40px;
-		right: 20px;
+		right: 0px;
 		opacity: .4;
 	}
 	.site__top--text{
@@ -141,7 +144,6 @@
 	header{
 		padding-left: 0!important;
 		padding-right: 0!important;
-		overflow: hidden;
 	}
 	.site__top {
 		-webkit-flex-direction: column;
@@ -150,6 +152,7 @@
 		-o-flex-direction: column;
 		flex-direction: column;
 		padding-top: 0px;
+		overflow: hidden!important;
 	}
 	.site__top--text{
 		position: initial;
