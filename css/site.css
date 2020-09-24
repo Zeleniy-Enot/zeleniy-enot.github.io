@@ -153,8 +153,9 @@
 	}
 	.site__top--text{
 		position: initial;
-		height: 389px;
+		height: 390px;
 		margin-top: 60px;
+		margin-bottom: 20px;
 	}
 	.site__top--video{
 		right: 50%;
