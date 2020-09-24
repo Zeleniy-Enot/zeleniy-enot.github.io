@@ -223,7 +223,6 @@
 	transition: 0.3s opacity;
 	opacity: 0;
 }
-
 .loaded .preloader {
 	display: none;
 }
@@ -250,6 +249,9 @@
 }
 .main > div > p:nth-child(1), .order__text > p:nth-child(1){
 	font-size: 48px;
+}
+.owl-carousel {
+	z-index: inherit!important; 
 }
 @media screen and (max-width: 1024px){
 	.main > div > p:nth-child(1), .order__text > p:nth-child(1){
@@ -523,6 +525,7 @@
 	align-items: center;
 }
 .top__main--prise_btn p{
+	text-transform: uppercase;
 	font-size: 14px;
 	font-family: "Medium", sans-serif;
 	color: #fff;
@@ -606,7 +609,7 @@
 	padding: 20px;
 	padding-top: 50px;
 	border-radius: 15px;
-	z-index: 100;
+	z-index: 1000;
 	color: #000;
 	text-align: center;
 	display: none;
@@ -714,6 +717,7 @@
 	font-family: "Bold", sans-serif;
 	text-transform: uppercase;
 	color: #fff;
+	line-height: 1.4;
 	cursor: pointer;
 	border: none; 
 	outline: none;

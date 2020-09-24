@@ -77,6 +77,14 @@
 	justify-content: center;
 }
 .site_bottom--item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
 	width: 140px;	
 	border-radius: 50px;
 	margin-right: 20px;
@@ -88,10 +96,11 @@
 }
 .site_bottom--item p{
 	text-transform: uppercase;
+	line-height: normal;
 	font-family: 'Bold', sans-serif;
 	font-size: 14px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 	transition: .5s;
 	color: #000;
