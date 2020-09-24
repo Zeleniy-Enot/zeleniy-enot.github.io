@@ -141,7 +141,7 @@
 	header{
 		padding-left: 0!important;
 		padding-right: 0!important;
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 	.site__top {
 		-webkit-flex-direction: column;
