@@ -120,7 +120,7 @@
 	}
 }
 @media screen and (max-width: 1023px){
-	.site__top{
+	header{
 		position: relative;
 	}
 	.site__top--text{
@@ -129,8 +129,8 @@
 	}
 	.site__top--video{
 		position: absolute;
-		top: 20px;
-		right: 0;
+		bottom: -40px;
+		right: 20px;
 		opacity: .4;
 	}
 	.site__top--text{
@@ -153,11 +153,11 @@
 	}
 	.site__top--text{
 		position: initial;
-		height: 390px;
 		margin-top: 60px;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 	}
 	.site__top--video{
+		bottom: -10px;
 		right: 50%;
 		transform: translate(50%,0%);
 	}
