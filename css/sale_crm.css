@@ -254,8 +254,10 @@
 .bitrixOWL{
 	margin-bottom: 40px;
 	position: relatsive;
-	height: 451px;
 }
+.bitrixOWL > .owl-carousel > .owl-height{
+	min-height: 100%!important;
+} 
 .bitrixOWL > p:nth-child(1){
 	z-index: 10;
 	position: absolute;
