@@ -30,15 +30,12 @@ $(function() {
 	$(".slide-one").owlCarousel({
 		loop: true,
 		autoHeight:true,
-		autoplay: true,
-		autoplayTimeout: 5000,
 		responsive:{
 			0:{
 				items:1,
 			}
 		}
 	});
-
 	$(".slide-two").owlCarousel({
 		loop: true,
 		dots: false,
@@ -59,6 +56,17 @@ $(function() {
 		animateOut: 'zoomOut',
 		animateIn: 'fadeIn',
 		autoplayTimeout: 3000,
+		responsive:{
+			0:{
+				items:1,
+			}
+		}
+	});
+	$(".slide-four").owlCarousel({
+		loop: true,
+		autoHeight:true,
+		autoplay: true,
+		autoplayTimeout: 5000,
 		responsive:{
 			0:{
 				items:1,
