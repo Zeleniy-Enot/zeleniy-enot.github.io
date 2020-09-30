@@ -29,6 +29,7 @@ $(document).ready(function(){
 $(function() {
 	$(".slide-one").owlCarousel({
 		loop: true,
+		autoHeight:true,
 		responsive:{
 			0:{
 				items:1,
