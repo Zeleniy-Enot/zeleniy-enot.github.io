@@ -253,7 +253,8 @@
 /*BitrixOWL*/
 .bitrixOWL{
 	margin-bottom: 40px;
-	position: relative;
+	position: relatsive;
+	min-height: 451px;
 }
 .bitrixOWL > p:nth-child(1){
 	z-index: 10;
