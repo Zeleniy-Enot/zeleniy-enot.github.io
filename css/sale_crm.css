@@ -448,7 +448,7 @@
 }
 .bitrixprice__rate--top{
 	width: inherit;
-	box-shadow: 0px 2px 4px 0 #000000;
+	/*box-shadow: 0px 2px 4px 0 #000000;*/
 }
 .bitrixprice__rate--top p{
 	padding: 11px 20px;
