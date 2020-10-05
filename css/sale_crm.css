@@ -280,19 +280,22 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.bitrixOWL__slide p:nth-child(1){
+.bitrixOWL__slide-text{
+	height: 100%;
+}
+.bitrixOWL__slide-text > p:nth-child(1){
 	font-size: 32px;
 	font-family: "Medium", sans-serif;
 	padding-bottom: 25px;
 }
-.bitrixOWL__slide p:nth-child(2){
+.bitrixOWL__slide-text > p:nth-child(2){
 	max-width: 385px;
 	font-size: 18px;
 	line-height: normal;
 	font-family: "Regular", sans-serif;
 }
 .bitrixOWL__slide img{
-	max-width: 740px;
+	width: 740px!important;
 	height: auto;
 }
 @media screen and (max-width: 1220px){
