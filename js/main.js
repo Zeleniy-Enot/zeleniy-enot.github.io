@@ -64,8 +64,8 @@ $(function() {
 	$(".slide-four").owlCarousel({
 		loop: true,
 		autoHeight:true,
-		// autoplay: true,
-		// autoplayTimeout: 5000,
+		autoplay: true,
+		autoplayTimeout: 10000,
 		responsive:{
 			0:{
 				items:1,
