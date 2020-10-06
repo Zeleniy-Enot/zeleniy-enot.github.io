@@ -48,10 +48,6 @@ header{
 	padding-top: 60px;
 	text-align: center;
 }
-.company img{
-	max-width: 415px;
-	padding-bottom: 30px;
-}
 .company p{
 	text-align: left;
 	line-height: normal;
@@ -59,19 +55,19 @@ header{
 	max-width: 800px;
 	margin: auto;
 }
-.company p:nth-child(2){
+.company p:nth-child(1){
 	font-size: 20px;
 	font-family: "SemiBold", sans-serif;
 }
-.company p:nth-child(3){
+.company p:nth-child(2){
 	font-size: 18px;
 	font-family: "Medium", sans-serif;
 }
-.company p:nth-child(4){
+.company p:nth-child(3){
 	font-size: 18px;
 	font-family: "Regular", sans-serif;
 }
-.company p:nth-child(5){
+.company p:nth-child(4){
 	padding-top: 20px;
 	font-size: 20px;
 	font-family: "Medium", sans-serif;
@@ -163,16 +159,16 @@ footer{
 	.company p{
 		padding-bottom: 15px;
 	}
-	.company p:nth-child(2){
+	.company p:nth-child(1){
 		font-size: 18px;
+	}
+	.company p:nth-child(2){
+		font-size: 16px;
 	}
 	.company p:nth-child(3){
 		font-size: 16px;
 	}
 	.company p:nth-child(4){
-		font-size: 16px;
-	}
-	.company p:nth-child(5){
 		padding-top: 10px;
 		font-size: 18px;
 	}
