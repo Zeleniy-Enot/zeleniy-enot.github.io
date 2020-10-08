@@ -45,7 +45,7 @@
 .site__top--text > p{
 	line-height: normal;
 }
-.site__top--text > p:nth-child(1){
+.site__top--text > h2{
 	max-width: 535px;
 	font-family: "Bold", sans-serif;
 	font-size: 32px;
@@ -60,7 +60,7 @@
 	box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
 }
 @media screen and (max-width: 1200px){
-	.site__top--text > p:nth-child(1) {
+	.site__top--text > h2 {
 		font-size: 24px;
 		max-width: 402px;
 	}
@@ -92,7 +92,7 @@
 		flex-direction: column;
 		padding-top: 30px;
 	}
-	.site__top--text > p:nth-child(1){
+	.site__top--text > h2{
 		font-size: 24px;
 		max-width: 402px;
 		text-align: center;
@@ -118,7 +118,7 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.site__top--text > p:nth-child(1){
+	.site__top--text > h2{
 		font-size: 20px;
 	}
 	.site__top--text > p:nth-child(2){
@@ -135,7 +135,7 @@
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-.bitrix > p:nth-child(1){
+.bitrix > h1:nth-child(1){
 	font-family: "Regular", sans-serif;
 	line-height: normal;
 	padding-bottom: 10px;
@@ -144,7 +144,7 @@
 	margin: auto;
 	text-align: center;
 }
-.bitrix > p span{
+.bitrix > h1 span{
 	line-height: normal;
 	font-family: "Bold", sans-serif;
 }

@@ -46,7 +46,7 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.top__main--text > p:nth-child(1){
+.top__main--text > h1{
 	font-size: 26px;
 	font-family: "Medium", sans-serif;
 	line-height: normal;
@@ -56,9 +56,8 @@
 	font-size: 62px;
 	text-transform: uppercase;
 	font-family: "Bold", sans-serif;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-bottom: 30px;
-	line-height: normal;
 }
 .top__main--text > p:nth-child(3){
 	max-width: 544px;
@@ -101,19 +100,19 @@
 	line-height: 20px;
 }
 
-.top__main--form p{
+.top__main--form p, .top__main--form h2{
 	text-align: center;
 	margin: auto;
 }
-.top__main--form p:nth-child(1){
+.top__main--form p:nth-child(2), .top__main--form h2{
 	font-size: 26px;
 	font-family: "Medium", sans-serif;
 	line-height: normal;
-	padding-bottom: 20px;
 }
-.top__main--form p:nth-child(2){
+.top__main--form p:nth-child(3){
 	max-width: 437px;
 	font-size: 20px;
+	padding-top: 20px;
 	padding-bottom: 15px;
 	font-family: "Regular", sans-serif;
 	line-height: normal;
@@ -130,7 +129,7 @@
 }
 
 @media screen and (max-width: 1040px){
-	.top__main--text > p:nth-child(1){
+	.top__main--text > h1{
 		font-size: 20px;
 	}
 	.top__main--text > p:nth-child(2){
@@ -147,7 +146,7 @@
 		padding-top: 20px;
 	}
 }
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1000px){
 	.top__main {
 		padding-bottom: 30px;
 		padding-top: 30px;
@@ -184,11 +183,25 @@
 		-o-flex-direction: column;
 		flex-direction: column;
 	}
-	.top__main--form p:nth-child(2) {
-		padding-bottom: 15px;
+	.top__main--form p:nth-child(3) {
+		padding-top: 15px;
 	}
 }
-
+@media screen and (max-width: 580px){
+	.top__main--plus{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.top__main--plus_item:nth-child(1) {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+}
 @media screen and (max-width: 425px){
 	.top__main {
 		align-items: inherit; 
@@ -200,7 +213,7 @@
 		margin-right: 10px;
 		margin-bottom: 0px;
 	}
-	.top__main--text > p:nth-child(1){
+	.top__main--text > h1{
 		font-size: 18px;
 		text-align: center;
 	}
@@ -215,22 +228,9 @@
 		font-size: 16px;
 		padding-bottom: 10px;
 	}
-	.top__main--plus{
-		-webkit-flex-direction: column;
-		-moz-flex-direction: column;
-		-ms-flex-direction: column;
-		-o-flex-direction: column;
-		flex-direction: column;
-		-ms-align-items: center;
-		align-items: center;
-	}
 	.top__main--plus_item {
 		padding: 10px;
 		width: 213px;
-	}
-	.top__main--plus_item:nth-child(1) {
-		margin-right: 0px;
-		margin-bottom: 10px;
 	}
 	.top__main--plus_item img {
 		width: 50px;
@@ -255,17 +255,6 @@
 		margin-left: 10px;
 		max-width: 107px;
 	}
-	.top__main--form p{
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.top__main--form p:nth-child(1) {
-		font-size: 20px;
-		padding-bottom: 10px;
-	}
-	.top__main--form p:nth-child(2) {
-		font-size: 15px;
-	}
 	.top__main--form {
 		display: none;
 	}
@@ -280,6 +269,7 @@
 	font-family: "Regular", sans-serif;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #00000030;
+	max-width: 501px;
 }
 .important > p span{
 	font-family: "Bold", sans-serif;
@@ -437,7 +427,7 @@
 }
 
 .services > p{
-	max-width: 489px;
+	max-width: 392px;
 	margin: auto;
 	font-size: 60px;
 	font-family: "Bold", sans-serif;
@@ -687,7 +677,7 @@
 	line-height: normal;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #00000030;
-	max-width: 757px;
+	max-width: 607px;
 	margin: auto;
 	text-align: center;
 }
@@ -944,7 +934,7 @@
 	line-height: normal;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #00000030;
-	max-width: 706px;
+	max-width: 564px;
 	margin: auto;
 	text-align: center;
 }
@@ -1087,7 +1077,7 @@
 	margin-bottom: 40px;
 }
 .audit > p:nth-child(1){
-	max-width: 711px;
+	max-width: 569px;
 	font-family: "Regular", sans-serif;
 	font-size: 60px;
 	line-height: normal;
@@ -1362,7 +1352,7 @@ fieldset{
 	margin-bottom: 40px;
 }
 .result > p:nth-child(1){
-	max-width: 734px;
+	max-width: 587px;
 	margin: auto;
 	text-align: center;
 	font-family: "Regular", sans-serif;
@@ -1568,7 +1558,7 @@ fieldset{
 }
 .stage > p:nth-child(1){
 	text-align: right;
-	max-width: 437px;
+	max-width: 349px;
 	margin-left: auto;
 	font-family: "Regular", sans-serif;
 	font-size: 60px;
@@ -1746,9 +1736,6 @@ fieldset{
 .face > p span{
 	font-family: "Bold", sans-serif;
 	text-transform: uppercase;
-}
-.face__slide{
-
 }
 .owl-carousel .owl-item img {
 	margin: auto;

@@ -247,21 +247,21 @@
 .blue{
 	color: #00a99d!important;
 }
-.main > div > p:nth-child(1), .order__text > p:nth-child(1){
+.main > div > p:nth-child(1), .order__text > p:nth-child(1), .main > div > h1{
 	font-size: 48px;
 }
 .owl-carousel {
 	z-index: inherit!important; 
 }
 @media screen and (max-width: 1024px){
-	.main > div > p:nth-child(1), .order__text > p:nth-child(1){
+	.main > div > p:nth-child(1), .order__text > p:nth-child(1), .main > div > h1{
 		font-size: 36px;
 	}
 }
 @media screen and (max-width: 425px){
-	.main > div > p:nth-child(1), .order__text > p:nth-child(1){
+	.main > div > p:nth-child(1), .order__text > p:nth-child(1), .main > div > h1{
 		font-size: 28px;
-		text-align: center;
+		/*text-align: center;*/
 	}
 }
 

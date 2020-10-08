@@ -45,12 +45,12 @@
 .introduction__top--text{
 	max-width: 459px;
 }
-.introduction__top--text p{
+.introduction__top--text h2{
 	padding-top: 15px;
 	font-size: 24px;
 	font-family: "Medium", sans-serif;
 }
-.introduction__top--text p:nth-child(1){
+.introduction__top--text h1{
 	padding-top: 0;
 	font-size: 60px;
 	font-family: "Bold", sans-serif;
@@ -77,10 +77,10 @@
 		max-width: 463px;
 		padding-bottom: 20px;
 	}
-	.introduction__top--text p{
+	.introduction__top--text h2{
 		font-size: 20px;
 	}	
-	.introduction__top--text > p:nth-child(1){
+	.introduction__top--text h1{
 		font-size: 36px;
 		text-align: center;
 	}
@@ -100,12 +100,12 @@
 		padding-right: 10px;
 		padding-bottom: 10px;
 	}
-	.introduction__top--text p{
+	.introduction__top--text h2{
 		padding-top: 10px;
 		font-size: 15px;
 		line-height: normal;
 	}
-	.introduction__top--text > p:nth-child(1){
+	.introduction__top--text h1{
 		font-size: 32px;
 	}
 	#ytplayer {
@@ -882,6 +882,7 @@
 	font-family: "Medium", sans-serif;
 	font-size: 20px;
 	padding-bottom: 10px;
+	line-height: normal;
 }
 .site__work--item_text p:nth-child(2){
 	font-family: "Regular", sans-serif;
